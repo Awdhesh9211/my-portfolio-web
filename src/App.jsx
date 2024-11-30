@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import profile from "./assets/profile.jpg";
+import { FaGithub, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import './App.css';  // Import CSS file
 
 // Import constant data
-import { NAV_ITEMS, ABOUT_DATA, SERVICES, PORTFOLIO_ITEMS, CONTACT, FOOTER_TEXT } from './data';
+import { NAV_ITEMS, ABOUT_DATA, SERVICES, PORTFOLIO_ITEMS, CONTACT, FOOTER_TEXT } from './data/index.jsx';
 
 // Import FontAwesome for icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faTimes, faWebAwesome, } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -120,12 +121,16 @@ function App() {
                 <div className="layer">
                   <h3>{item.title}</h3>
                   <p>{item.description}</p>
-                  <a href={item.link}>Go</a>
+                  <div className="redirect">
+                  <a href={item.WebLink}>{item.web}</a>
+                  <div className='line'></div>
+                  <a href={item.CodeLink}>{item.code}</a>
+                  </div>
                 </div>
               </div>
             ))}
           </div>
-          <a href="#" className="btn">MORE</a>
+          <a href="https://github.com/Awdhesh9211" className="btn">MORE</a>
         </div>
       </div>
 
@@ -139,7 +144,7 @@ function App() {
               <p>{CONTACT.phone}</p>
               <div className="social-icons">
                 {CONTACT.socialLinks.map((social, index) => (
-                  <a href={social.link} key={index}>{social.name}</a>
+                  <a href={social.link} key={index}>{social.icon}</a>
                 ))}
               </div>
               <a href={CONTACT.resumeLink} download className="btn">Download CV</a>
