@@ -50,7 +50,7 @@ export const NAV_ITEMS = [
     { image: "projects/flutter_chat_app.png", title: "Chat App", description: "Created By Using Flutter", WebLink: "https://github.com/Awdhesh9211/flutter-chatapp" , web:<CgWebsite />, code:<FaCode/>,CodeLink:"https://github.com/Awdhesh9211/flutter-chatapp"},
     { image: "projects/BubbleGo.png", title: "Bubble Go", description: "Created By Using HTML / CSS / JS", WebLink: "https://awdhesh9211.github.io/BubbleGo/" , web:<CgWebsite />, code:<FaCode/>,CodeLink:"https://github.com/Awdhesh9211/BubbleGo"},
     { image: "projects/tic_tac_toe.png", title: "TIC TAC TOA", description: "Created By Using HTML / CSS / JS", WebLink: "https://awdhesh9211.github.io/Tic-tac-toe/" , web:<CgWebsite />, code:<FaCode/>,CodeLink:"https://github.com/Awdhesh9211/Tic-tac-toe"},
-    { image: "projects/anime_explorer.png", title: "Anime Explorer", description: "Created By Using NextJs", WebLink: "https://github.com/Awdhesh9211/anime-explorer-next"},
+    { image: "projects/anime_explorer.png", title: "Anime Explorer", description: "Created By Using NextJs", WebLink: "https://anime-explorer-next.vercel.app/" , web:<CgWebsite />, code:<FaCode/>,CodeLink:"https://github.com/Awdhesh9211/anime-explorer-next"},
   ];
   
   // Data for Contact
